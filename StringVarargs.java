@@ -15,6 +15,24 @@ public class StringVarargs {
 		}
 		System.out.println();
 	}
+	
+	public static void testWithParam(String title, String ...strings) {
+		System.out.println("Title - " + title);
+		for (String temp: strings) {
+			System.out.print(temp + " ");
+		}
+		System.out.println();
+	}
+	
+//	Doesn't work - vararg must be last
+//	public static void testWithParamBack(String ...strings, String title) {
+//		System.out.println("Title - " + title);
+//		for (String temp: strings) {
+//			System.out.print(temp + " ");
+//		}
+//		System.out.println();
+//	}
+
 
 	public static void main(String[] args) {
 		// Empty
@@ -37,6 +55,16 @@ public class StringVarargs {
 		//String Split
 		String testSplit = "test;test2;test3;";
 		testVarags(testSplit.split(";"));
+		
+		// String with String varargs
+		testWithParam("title", "1", "2", "3" );		
+		testWithParam("title");
+		testWithParam("title", "1");
+		
+		System.out.println("[te]st".replaceAll("\\[te\\]", "bea"));
+		for(String temp : "temp,temp2".split(",") ){
+			System.out.println(temp);
+		}
 	}
 
 }
