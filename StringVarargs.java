@@ -9,7 +9,7 @@ import java.util.*;
  *
  */
 
-// test git - master
+// test git - branch2
 
 public class StringVarargs {
 	public static void testVarags(String ...strings) {
