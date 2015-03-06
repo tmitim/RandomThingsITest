@@ -8,6 +8,9 @@ import java.util.*;
  * @since February 13, 2015
  *
  */
+
+// test git - master
+
 public class StringVarargs {
 	public static void testVarags(String ...strings) {
 		for (String temp: strings) {
