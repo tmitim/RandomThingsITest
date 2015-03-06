@@ -2,14 +2,15 @@ package RandomThingsITest;
 
 import java.util.*;
 
-// testing branch changing - branch
-
 /**
  * Just testing how Varargs work
  * @author tmitim
  * @since February 13, 2015
  *
  */
+
+// test git - master
+
 public class StringVarargs {
 	public static void testVarags(String ...strings) {
 		for (String temp: strings) {
